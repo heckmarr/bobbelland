@@ -13,9 +13,9 @@
     background-color: rgb(182, 12, 112);
     border-radius: 6px;
     border: 2px;
-    width:10em;
-    height:2em;
-    display:inline;
+    font-size: 18px;
+    display:flex;
+    justify-content: center;
 }
 .work-history {
     border-radius: 6px;
@@ -37,7 +37,9 @@
 <div class="container">
 <dl>
 <dt>
-<button class="top" id="nameplate" onClick="location.reload(true)">Bob "Ben" Belland</button>
+    <div class="top">
+        <button class="top" id="nameplate" onClick="location.reload(true)">Bob "Ben" Belland</button>
+    </div>
 </dt>
 <dt>
 <div class="work-history">
@@ -55,6 +57,20 @@
                         <dt>SVR Automation Intelligence Inc.</dt>
                         <dt>Lead Developer</dt>
                         <dt>September 2020-August 2021</dt>
+                    </dl>
+                </td>
+                <td class="history-item">
+                    <dl>
+                        <dt>Microserve</dt>
+                        <dt>Configuration Technician</dt>
+                        <dt>August 2019-September 2020</dt>
+                    </dl>
+                </td>
+                <td class="history-item">
+                    <dl>
+                        <dt>Kimberley Public Library</dt>
+                        <dt>Library Intern</dt>
+                        <dt>May 2016-August 2019</dt>
                     </dl>
                 </td>
             </tr>
