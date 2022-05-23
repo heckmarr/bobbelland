@@ -7,9 +7,10 @@
     display: flex;
     align-items:top;
     justify-content: center;
+    font-family: "Courier New";
 }
 .top {
-    background-color: rgb(60, 120, 40);
+    background-color: rgb(182, 12, 112);
     border-radius: 6px;
     border: 2px;
     width:10em;
@@ -17,7 +18,6 @@
     display:inline;
 }
 .work-history {
-    background-color: rgb(60, 116, 40);
     border-radius: 6px;
     border: 2px;
     width:10em;
@@ -31,20 +31,20 @@
 </head>
 <body>
 <div class="container">
-
+<dl>
+<dt>
 <button class="top" id="nameplate" onClick="location.reload(true)">Bob "Ben" Belland</button>
-
-<table class="work-history">
-    <tr>
-    <td>
-    <p>Lekker Foods</p>
-    </td>
-    <td>
-    </td>
-    </tr>
-
-</table>
-
+</dt>
+<dt>
+<div class="work-history">
+    <dl>
+        <dt>Lekker Foods</dt>
+        <dt>Business Programmer</dt>
+        <dt>September 2021-Present</dt>
+    </dl>
+</div>
+</dt>
+</dl>
 </div>
 </body>
 
