@@ -9,13 +9,22 @@
     justify-content: center;
     font-family: "Courier New";
 }
-.top {
+.nameplate {
     background-color: rgb(182, 12, 112);
     border-radius: 6px;
     border: 2px;
     font-size: 18px;
     display:flex;
     justify-content: center;
+}
+.work-history {
+    border-radius: 6px;
+    border: 2px;
+    display:inline;
+}
+.history-item {
+    background-color: rgb(220, 220, 220);
+    border-radius: 6px;
 }
 .repo-header {
     background-color: rgb(192, 12, 112);
@@ -36,22 +45,44 @@
 }
 .repo-item {
     border-radius: 6px;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(200, 200, 200);
 }
 .repo-link {
     display: flex;
     justify-content: center;
 }
-.work-history {
+.skills-header {
+    background-color: rgb(212, 12, 112);
     border-radius: 6px;
     border: 2px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.skills-listings {
+    border-radius:6px;
+    border:2px;
     display:inline;
-
 }
-.history-item {
-    background-color: rgb(220, 220, 220);
+.skills-table {
+    display: flex;
+    justify-content: center;
+}
+.skills-item {
+    width:2em;
+    height:2em;
     border-radius: 6px;
+    background-color: rgb(180, 180, 180);
 }
+.contact-header {
+    background-color: rgb(226, 12, 112);
+    border-radius: 6px;
+    border: 2px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
 
 </style>
 
@@ -60,8 +91,8 @@
 <div class="container">
 <dl>
 <dt>
-    <div class="top">
-        <button class="top" id="nameplate" onClick="location.reload(true)">Bob "Ben" Belland</button>
+    <div class="nameplate">
+        <button class="nameplate" id="nameplate" onClick="location.reload(true)">Bob "Ben" Belland</button>
     </div>
 </dt>
 <dt>
@@ -129,6 +160,52 @@
                 </td>
             </tr>
         </table>
+    </div>
+</dt>
+<dt>
+    <div class="skills-header">
+        <button class="skills-header" id="skills">Skills</button>
+    </div>
+</dt>
+    <div class="skills-listings">
+        <table class="skills-table">
+            <tr>
+                <td class="skills-item">
+                    <dl>
+                        <dt>Polyglot programmer</dt>
+                    </dl>
+                </td>
+                <td class="skills-item">
+                    <dl>
+                        <dt>Go, Python, HTML, Haskell</dt>
+                    </dl>
+                </td>
+                <td class="skills-item">
+                    <dl>
+                        <dt>Pandas, SQL, BASH, ZSH</dt>
+                    </dl>
+                </td>
+                <td class="skills-item">
+                    <dl>
+                        <dt>Scripting, debugging, automation, monitoring</dt>
+                    </dl>
+                </td>
+                <td class="skills-item">
+                    <dl>
+                        <dt>R, Scilab, numpy</dt>
+                    </dl>
+                </td>
+                <td class="skills-item">
+                    <dl>
+                        <dt>Powershell, rabbitmq, zeromq</dt>
+                    </dl>
+                </td>
+            </tr>
+        </table>
+    </div>
+<dt>
+    <div class="contact-header">
+        <button class="contact-header" id="contact">Contact</button>
     </div>
 </dt>
 </dl>
