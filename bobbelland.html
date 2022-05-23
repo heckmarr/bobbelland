@@ -17,11 +17,34 @@
     display:flex;
     justify-content: center;
 }
+.repo-header {
+    background-color: rgb(192, 12, 112);
+    border-radius: 6px;
+    border: 2px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+.repository-listings {
+    border-radius: 6px;
+    border: 2px;
+    display:inline;
+}
+.repo-table {
+    display:flex;
+    justify-content:center;
+}
+.repo-item {
+    border-radius: 6px;
+    background-color: rgb(220, 220, 220);
+}
+.repo-link {
+    display: flex;
+    justify-content: center;
+}
 .work-history {
     border-radius: 6px;
     border: 2px;
-    width:10em;
-    height:10em;
     display:inline;
 
 }
@@ -76,6 +99,37 @@
             </tr>
         </table>
 </div>
+<dt>
+    <div class="repo-header">
+        <button class="repo-header" id="repositories">Repositories</button>
+    </div>
+</dt>
+<dt>
+    <div class="repository-listings">
+        <table class="repo-table">
+            <tr>
+                <td class="repo-item">
+                    <dl>
+                        <dt>A curated list of junior projects</dt>
+                        <dt><a class="repo-link" href="https://gitlab.com/entropy-">entropy-</a></dt>
+                    </dl>
+                    <dl>
+                </td>
+                <td class="repo-item">
+                        <dt>Latest work, unsorted</dt>
+                        <dt><a class="repo-link" href="https://github.com/panic-err">panic-err</a></dt>
+                    </dl>
+                    <dl>
+                </td>
+                <td class="repo-item">
+                        <dt>Unsorted general work</dt>
+                        <dt><a class="repo-link" href="https://gitlab.com/Entropy_">Entropy_</a></dt>
+                        <dt><a class="repo-link" href="https://github.com/phillipjphry">phillipjphry</a></dt>
+                    </dl>
+                </td>
+            </tr>
+        </table>
+    </div>
 </dt>
 </dl>
 </div>
